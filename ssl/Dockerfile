@@ -13,7 +13,7 @@ COPY server.crt /server.crt
 
 COPY server.key /server.key
 
-COPY ssl.con /etc/httpd/conf.d/default.conf
+COPY ssl.conf /etc/httpd/conf.d/default.conf
 
 RUN echo "<?php phpinfo(); ?>" > /var/www/html/test.php
 
